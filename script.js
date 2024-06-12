@@ -44,7 +44,7 @@ catalogo.addEventListener("click", function () {
 })
 
 // Adicionar no carrinho
-function addToCart(name, price) {
+function addToCart(name, price,) {
     const existingItem = cart.find(item => item.name === name)
     if (existingItem) {
         existingItem.quantity += 1;
@@ -166,17 +166,17 @@ checkoutBtn.addEventListener("click", function () {
 
     const cartItems = cart.map((item) => {
         return (
-            ` ${item.name} Quantidade: (${item.quantity}) Preço: R$${item.price} |`
+            ` ${item.name} Quantidade: (${item.quantity}) Preço: R$${item.price} `
         )
-    }).join("")
+    })
+        console.log(cartItems);
+    // const message = encodeURIComponent(cartItems)
+    // const phone = "47996866060"
 
-    const message = encodeURIComponent(cartItems)
-    const phone = "47996866060"
+    // window.open(`https://wa.me/${phone}?text=${message} Nome: ${nameInput.value}`, "_blank")
 
-    window.open(`https://wa.me/${phone}?text=${message} Nome: ${nameInput.value}`, "_blank")
-
-    cart = [];
-    updateCartModal();
+    // cart = [];
+    // updateCartModal();
 
 })
 
