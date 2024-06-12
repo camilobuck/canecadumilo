@@ -1,0 +1,746 @@
+<!-- npm run dev (executar no prompt)-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Toastify JS -->
+    <!-- https://apvarun.github.io/toastify-js/ -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+    <!-- Import Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3r1rZj/k7ujTnHg4CGR2D7kSs8v4LLanw2qksYuRlEzO+tcaEPQogQ@KaoGN26/zrn20ImR1DFuLWn007aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <meta property="og:type" content="website"/>
+        <meta property="og:type" content="Caneca Du Milo - Canecas Personalizadas"/>
+        <!-- <meta property="og:image" content="https://"/> -->
+        <meta property="og:description" content="Produtos Personalizados"/>
+        <meta property="og:site_name" content="CanecaDuMilo"/>
+
+    <link rel="stylesheet" href="./styles/output.css" />
+
+    <title>Arte Du Milo</title>
+</head>
+
+<body>
+
+    <!--HEADER-->
+
+    <header class="w-full h-[420px] bg-zinc-800 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/logo_2024.png" alt="Logo Milo"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-125 duration-200" />
+            <h1 class="text-4xl mt-4 font-bold text-gray-700">Caneca Du Milo</h1>
+
+            <span class="font-medium text-gray-700">@canecadumilo</span>
+
+            <div class="bg-green-400 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Seg a Sex - 8:00 as 18:00</span>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!--FIM HEADER-->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Canecas de Cerâmica
+    </h2>
+
+    <!-- INICIO MENU -->
+    <div id="catalogo">
+
+        <main
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-3 md:gap-12 xl:gap-12 mx-auto max-w-full px-2 mb-16">
+
+
+            <!-- BRANCA  -->
+            <div class="flex gap-2">
+                <img src="./assets/Caneca Branca1.png" alt="Branca1"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Caneca Branca c/ Caixinha</p>
+                    <p class="text-sm">Caneca Branca de cerâmica, capacidade 325ml.</p>
+
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 40,00</p>
+                        <button class="bg-gray-700 px-5 rounded add-to-cart-btn" data-name="Caneca Branca c/ Caixinha"
+                            data-price="40.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIM BRANCA -->
+
+            <!-- PRODUTO ITEM 3  -->
+            <div class="flex gap-2">
+                <img src="./assets/amarela1.png" alt="amarela"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Caneca Amarela</p>
+                    <p class="text-sm">Caneca Amarela de cerâmica, capacidade 325ml.</p>
+
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 48,00</p>
+                        <button class="bg-gray-700 px-5 rounded add-to-cart-btn" data-name="Caneca Amarela"
+                            data-price="48.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIM PRODUTO ITEM 3 -->
+
+            <!-- PRODUTO ITEM 4  -->
+            <div class="flex gap-2">
+                <img src="./assets/laranja1.png" alt="Laranja"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Caneca Laranja</p>
+                    <p class="text-sm">Caneca Laranja de cerâmica, capacidade 325ml.</p>
+
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 48,00</p>
+                        <button class="bg-gray-700 px-5 rounded add-to-cart-btn" data-name="Caneca Laranja"
+                            data-price="48.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIM PRODUTO ITEM  -->
+
+            <!-- PRODUTO ITEM 5  -->
+            <div class="flex gap-2">
+                <img src="./assets/preta1.png" alt="Preta"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Caneca Preta</p>
+                    <p class="text-sm">Caneca Preta de cerâmica, capacidade 325ml.</p>
+
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 48,00</p>
+                        <button class="bg-gray-700 px-5 rounded add-to-cart-btn" data-name="Caneca Preta"
+                            data-price="48.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIM PRODUTO ITEM 5  -->
+
+            <!-- PRODUTO ITEM 6  -->
+            <div class="flex gap-2">
+                <img src="./assets/rosa1.png" alt="Rosa"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Caneca Rosa</p>
+                    <p class="text-sm">Caneca Rosa de cerâmica, capacidade 325ml.</p>
+
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 48,00</p>
+                        <button class="bg-gray-700 px-5 rounded add-to-cart-btn" data-name="Caneca Rosa"
+                            data-price="48.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIM PRODUTO ITEM 6 -->
+
+            <!-- PRODUTO ITEM 7  -->
+            <div class="flex gap-2">
+                <img src="./assets/verde_claro.png" alt="Verde Claro"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Caneca Verde Claro</p>
+                    <p class="text-sm">Caneca Verde Claro de cerâmica, capacidade 325ml.</p>
+
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 48,00</p>
+                        <button class="bg-gray-700 px-5 rounded add-to-cart-btn" data-name="Caneca Verde Claro"
+                            data-price="48.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIM PRODUTO ITEM 7 -->
+
+            <!-- PRODUTO ITEM 8  -->
+            <div class="flex gap-2">
+                <img src="./assets/verde_escuro.png" alt="Verde Escura"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Caneca Verde Escura</p>
+                    <p class="text-sm">Caneca Verde Escura de cerâmica, capacidade 325ml.</p>
+
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 48,00</p>
+                        <button class="bg-gray-700 px-5 rounded add-to-cart-btn" data-name="Caneca Verde Escura"
+                            data-price="48.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIM PRODUTO ITEM 8 -->
+
+            <!-- PRODUTO ITEM 8  -->
+            <div class="flex gap-2">
+                <img src="./assets/vermelha1.png" alt="Vermelha"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Caneca Vermelha</p>
+                    <p class="text-sm">Caneca Vermelha de cerâmica, capacidade 325ml.</p>
+
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 48,00</p>
+                        <button class="bg-gray-700 px-5 rounded add-to-cart-btn" data-name="Caneca Vermelha"
+                            data-price="48.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIM PRODUTO ITEM 8 -->
+
+        </main>
+        <h3 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+            Canecas Metalizadas
+        </h3>
+
+        <div id="catalogo">
+            <main
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-3 md:gap-12 mx-auto max-w-full px-2 mb-16">
+
+                <!-- Caneca Metalizada -->
+
+                <!-- METALIZADA 01  -->
+                <div class="flex gap-2 w-full">
+                    <img src="./assets/meta_gold.png" alt="Metalizada Dourada"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                    <div class="w-full">
+                        <p class="font-bold">Caneca Metalizada Dourada</p>
+                        <p class="text-sm">Caneca Metalizada Dourada de cerâmica, capacidade 325ml</p>
+
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 50,00</p>
+                            <button class="bg-gray-700 px-5 rounded add-to-cart-btn"
+                                data-name="Caneca Metalizada Dourada" data-price="50">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FIM METALIZADA 01 -->
+
+                <!-- METALIZADA 02  -->
+                <div class="flex gap-2 w-full">
+                    <img src="./assets/metal_pink.png" alt="Metalizada Pink"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                    <div class="w-full">
+                        <p class="font-bold">Caneca Metalizada Rosa Pink</p>
+                        <p class="text-sm">Caneca Metalizada Pink de cerâmica, capacidade 325ml</p>
+
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 50,00</p>
+                            <button class="bg-gray-700 px-5 rounded add-to-cart-btn" data-name="Caneca Metalizada Pink"
+                                data-price="50">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FIM METALIZADA 02 -->
+
+                <!-- METALIZADA 03  -->
+                <div class="flex gap-2 w-full">
+                    <img src="./assets/metal_rose.png" alt="Metalizada Rose"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                    <div class="w-full">
+                        <p class="font-bold">Caneca Metalizada Rosé</p>
+                        <p class="text-sm">Caneca Metalizada Rosé de cerâmica, capacidade 325ml</p>
+
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 50,00</p>
+                            <button class="bg-gray-700 px-5 rounded add-to-cart-btn" data-name="Caneca Metalizada Rose"
+                                data-price="50">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- METALIZADA 03 -->
+
+                <!-- METALIZADA 04  -->
+                <div class="flex gap-2 w-full">
+                    <img src="./assets/metal_prata.png" alt="Metalizada Prata"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                    <div class="w-full">
+                        <p class="font-bold">Caneca Metalizada Prata</p>
+                        <p class="text-sm">Caneca Metalizada Prata de cerâmica, capacidade 325ml</p>
+
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 50,00</p>
+                            <button class="bg-gray-700 px-5 rounded add-to-cart-btn" data-name="Caneca Metalizada Prata"
+                                data-price="50">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- METALIZADA 04 -->
+            <!--  FIM Caneca Metalizada -->
+
+            <!-- Caneca Glitter -->
+
+            <h4 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+                Canecas de Glitter
+            </h4>
+
+            <div id="catalogo">
+                <main
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-3 md:gap-12 mx-auto max-w-full px-2 mb-16">
+
+                    <!-- GLITTER 01  -->
+
+                    <div class="flex gap-2 w-full">
+                        <img src="./assets/glitter_prata.png" alt="Glitter Prata"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                        <div class="w-full">
+                            <p class="font-bold">Caneca Glitter Prata</p>
+                            <p class="text-sm">Caneca Glitter Prata de cerâmica, capacidade 325ml</p>
+
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">R$ 50,00</p>
+                                <button class="bg-gray-700 px-5 rounded add-to-cart-btn"
+                                    data-name="Caneca Glitter Prata" data-price="50">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FIM GLITTER 01 -->
+
+                    <!-- GLITTER 02  -->
+                    <div class="flex gap-2 w-full">
+                        <img src="./assets/glitter_verde.png" alt="Glitter Verde"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                        <div class="w-full">
+                            <p class="font-bold">Caneca Glitter Verde</p>
+                            <p class="text-sm">Caneca Glitter Verde de cerâmica, capacidade 325ml</p>
+
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">R$ 50,00</p>
+                                <button class="bg-gray-700 px-5 rounded add-to-cart-btn"
+                                    data-name="Caneca Glitter Verde" data-price="50">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FIM GLITTER 02 -->
+
+                    <!-- GLITTER 03  -->
+                    <div class="flex gap-2 w-full">
+                        <img src="./assets/glitter_vermelha.png" alt="Glitter Vermelha"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                        <div class="w-full">
+                            <p class="font-bold">Caneca Glitter Vermelha</p>
+                            <p class="text-sm">Caneca Glitter Vermelha de cerâmica, capacidade 325ml</p>
+
+
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">R$ 50,00</p>
+                                <button class="bg-gray-700 px-5 rounded add-to-cart-btn"
+                                    data-name="Caneca Glitter Vermelha" data-price="50">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <!-- FIM GLITTER 03 -->
+
+
+                <!-- Caneca Glitter -->
+
+                <!-- Caneca Vidro -->
+
+                <h4 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+                    Canecas de Vidro
+                </h4>
+
+                <div id="catalogo">
+                    <main
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-3 md:gap-12 mx-auto max-w-full px-2 mb-16">
+
+
+                        <!-- VIDRO 01  -->
+                        <div class="flex gap-2 w-full">
+                            <img src="./assets/vidro_jateada.png" alt="Vidro Jateada"
+                                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                            <div class="w-full">
+                                <p class="font-bold">Caneca Vidro Jateada</p>
+                                <p class="text-sm">Caneca Vidro Jateada, capacidade 325ml</p>
+
+
+                                <div class="flex items-center gap-2 justify-between mt-3">
+                                    <p class="font-bold text-lg">R$ 50,00</p>
+                                    <button class="bg-gray-700 px-5 rounded add-to-cart-btn"
+                                        data-name="Caneca Vidro Jateada" data-price="50">
+                                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FIM VIDRO 01 -->
+
+                        <!-- VIDRO 02  -->
+                        <div class="flex gap-2 w-full">
+                            <img src="./assets/vidro_azul.png" alt="Vidro Azul"
+                                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                            <div class="w-full">
+                                <p class="font-bold">Caneca Vidro Azul</p>
+                                <p class="text-sm">Caneca Vidro Azul, capacidade 325ml</p>
+
+
+                                <div class="flex items-center gap-2 justify-between mt-3">
+                                    <p class="font-bold text-lg">R$ 50,00</p>
+                                    <button class="bg-gray-700 px-5 rounded add-to-cart-btn"
+                                        data-name="Caneca Vidro Azul" data-price="50">
+                                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FIM VIDRO 02 -->
+
+                        <!-- VIDRO 03  -->
+                        <div class="flex gap-2 w-full">
+                            <img src="./assets/vidro_rosa.png" alt="Vidro Rosa"
+                                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                            <div class="w-full">
+                                <p class="font-bold">Caneca Vidro Rosa</p>
+                                <p class="text-sm">Caneca Vidro Rosa, capacidade 325ml</p>
+
+
+                                <div class="flex items-center gap-2 justify-between mt-3">
+                                    <p class="font-bold text-lg">R$ 50,00</p>
+                                    <button class="bg-gray-700 px-5 rounded add-to-cart-btn"
+                                        data-name="Caneca Vidro Rosa" data-price="50">
+                                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+
+                    <!-- FIM VIDRO 03 -->
+
+                    <!-- Caneca Preta -->
+
+                    <div class="mx-auto max-w-7xl px-2 my-2">
+                        <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+                            Caneca PRETA
+                        </h2>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-12 mx-auto max-w-7xl px-2 mb-16"
+                        id="menu">
+
+                        <!-- PRETA  -->
+                        <div class="flex gap-2 w-full">
+                            <img src="./assets/preta_tarja.png" alt="Preta Tarja"
+                                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                            <div class="w-full">
+                                <p class="font-bold">Caneca Preta c/ Tarja Branca</p>
+                                <p class="text-sm">Caneca Preta c/ Tarja Branca de cerâmica, capacidade 325ml</p>
+
+
+                                <div class="flex items-center gap-2 justify-between mt-3">
+                                    <p class="font-bold text-lg">R$ 58,00</p>
+                                    <button class="bg-gray-700 px-5 rounded add-to-cart-btn"
+                                        data-name="Caneca Preta Tarja" data-price="58">
+                                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FIM VIDRO 01 -->
+
+                    </div>
+                    <!-- Caneca PRETA -->
+
+                    <!-- PRESENTE -->
+
+                    <div class="mx-auto max-w-7xl px-2 my-2">
+                        <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+                            Embalage de Presente
+                        </h2>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-12 mx-auto max-w-7xl px-2 mb-16"
+                        id="menu">
+
+                        <!-- PRESENTE  -->
+                        <div class="flex gap-2">
+                            <img src="./assets/presente.png" alt="presente"
+                                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300">
+
+                            <div class="w-full">
+                                <p class="font-bold">Embalagem de Presente</p>
+                                <p class="text-sm">Embalegem de presente de acetato. Laço com cores variadas.</p>
+
+
+                                <div class="flex items-center gap-2 justify-between mt-3">
+                                    <p class="font-bold text-lg">R$ 10,00</p>
+                                    <button class="bg-gray-700 px-5 rounded add-to-cart-btn"
+                                        data-name="Embalagem de Presente" data-price="10">
+
+                                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIM PPRESENTE -->
+                </div>
+
+
+            </div>
+            <h5 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+                PRODUTOS
+            </h5>
+            <div id="catalogo">
+                <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-3 md:gap-12 xl:gap-12 mx-auto
+                 max-w-full px-2 mb-16">
+
+                    <!-- PRODUTOS  -->
+                    <div class="flex gap-2">
+                        <img src="./assets/chopp_lisa.png" alt="Caneca Choppp Lisa"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300" />
+
+                        <div class="w-full">
+                            <p class="font-bold">Caneca Choppp Lisa 475ml</p>
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">R$ 70,00</p>
+                                <button class="bg-gray-700 px-5 rounded add-to-cart-btn"
+                                    data-name="Caneca Choppp Lisa 475ml" data-price="70">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="./assets/chopp_jateado.png" alt="Caneca Choppp Jateada"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300" />
+
+                        <div class="w-full">
+                            <p class="font-bold">Caneca Choppp Jateada 475ml</p>
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">R$ 70,00</p>
+                                <button class="bg-gray-700 px-5 rounded add-to-cart-btn"
+                                    data-name="Caneca Choppp Jateada 475ml" data-price="70">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <img src="./assets/latinha.png" alt="Porta Lata"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300" />
+
+                        <div class="w-full">
+                            <p class="font-bold">Porta Lata 325ml / Alumínio</p>
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">R$ 25,00</p>
+                                <button class="bg-gray-700 px-5 rounded add-to-cart-btn"
+                                    data-name="Porta Lata 325ml Alumínio" data-price="25">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <img src="./assets/latao.png" alt="Porta Latão"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300" />
+
+                        <div class="w-full">
+                            <p class="font-bold">Porta Latão 473ml / Alumínio</p>
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">R$ 28,00</p>
+                                <button class="bg-gray-700 px-5 rounded add-to-cart-btn"
+                                    data-name="Porta Latão 473ml Alumínio" data-price="28">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <img src="./assets/2xicaras.png" alt="Kit 2 Xícaras"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300" />
+
+                        <div class="w-full">
+                            <p class="font-bold">Kit 2 Xícaras</p>
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">R$ 70,00</p>
+                                <button class="bg-gray-700 px-5 rounded add-to-cart-btn" data-name="Kit 2 Xícaras"
+                                    data-price="70">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <img src="./assets/4xicaras.png" alt="Kit 4 Xícaras"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300" />
+
+                        <div class="w-full">
+                            <p class="font-bold">Kit 4 Xícaras</p>
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">R$ 120,00</p>
+                                <button class="bg-gray-700 px-5 rounded add-to-cart-btn" data-name="Kit 4 Xícaras"
+                                    data-price="120">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <img src="./assets/squeeze.png" alt="Squeeze Nike"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-12 duration-300" />
+
+                        <div class="w-full">
+                            <p class="font-bold">Squeeze Nike 600ml</p>
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">R$ 60,00</p>
+                                <button class="bg-gray-700 px-5 rounded add-to-cart-btn" data-name="Squeeze Nike 600ml"
+                                    data-price="60">
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <!--  FIM PRODUTOS  -->
+            <!-- FIM MENU -->
+            <!-- MODAL CART -->
+            <dIv class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+                id="cart-modal">
+
+                <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+                    <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+                    <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+                    <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+                    <p class="font-bold mt-4">Nome Completo:</p>
+                    <input type="text" placeholder="Digite seu nome completo..." id="name-comp"
+                        class="w-full border-2 p-1 rounded my-1">
+                    <p class="text-red-500 hidden" id="name-warn">Digite seu nome completo!</p>
+                    <div class="flex items-center justify-between mt-5 w-full">
+                        <button id="close-modal-btn">Fechar</button>
+                        <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar
+                            Pedido</button>
+                    </div>
+                </div>
+            </dIv>
+            <!-- FIM MODAL CART -->
+            <!-- BUTTON CART FOOTER-->
+            <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-50 flex items-center justify-center">
+                <button id="cart-btn" class="flex items-center gap-2 text-white font-bold">
+                    (<span id="cart-count">0</span>)
+                    Veja meu carrinho
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+
+                </button>
+
+
+
+            </footer>
+
+
+            <!-- FIM BUTTON CART FOOTER-->
+
+            <!-- Toastify JS -->
+            <!-- https://apvarun.github.io/toastify-js/ -->
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+            
+            <script src="script.js"></script>
+
+</body>
+
+</html>
